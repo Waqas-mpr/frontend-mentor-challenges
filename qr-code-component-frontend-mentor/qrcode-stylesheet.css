@@ -1,0 +1,163 @@
+/*--------------------------*/
+/*  Custom Properties       */
+/*--------------------------*/
+
+:root {
+	/* colors */
+
+	--clr-white: 0, 0%, 100%;
+	--clr-lightgray: 212, 45%, 89%;
+	--clr-grayishblue: 220, 15%, 55%;
+	--clr-darkblue: 218, 44%, 22%;
+
+	/*font-sizes    */
+	--fs-400: 1rem;
+	--fs-700: 1.5rem;
+
+	/*font-family   */
+
+	--ff-outfit: "Outfit", sans-serif;
+}
+
+/*--------------------------*/
+/*  Reset                   */
+/*--------------------------*/
+
+/*Box sizing    */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*Reset margin  */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+picture,
+p {
+	margin: 0;
+}
+
+/*set init font weight  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: 400;
+}
+
+/* make images easier to work with  */
+
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* set up the body  */
+
+body {
+	font-family: var(--ff-outfit);
+	font-size: var(--fs-400);
+	color: hsl(var(--clr-darkblue));
+	background-color: hsl(var(--clr-lightgray));
+	line-height: 1.5rem;
+	min-height: 100vh;
+	font-size: 15px;
+}
+
+/*--------------------------*/
+/*  Utility classess        */
+/*--------------------------*/
+
+.flex-column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* typography */
+
+.ff-outfit {
+	font-family: var(--ff-serif);
+}
+.fs-400 {
+	font-size: var(--fs-400);
+}
+.fs-700 {
+	font-size: var(--fs-700);
+	font-weight: bold;
+}
+
+.fs-400,
+.fs-700 {
+	line-height: 1.75rem;
+}
+
+/* colors */
+
+/* background colors */
+
+.bg-lightgray {
+	background-color: hsl(var(--clr-lightgray));
+}
+
+.bg-white {
+	background-color: hsl(var(--clr-white));
+}
+
+/* text color */
+
+.text-dark {
+	color: hsl(var(--clr-darkblue));
+}
+
+.text-grayishblue {
+	color: hsl(var(--clr-grayishblue));
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+/* setting margin padding and radius */
+
+.border-radius {
+	border-radius: var(--radius, 0.5rem);
+}
+
+.margin-block {
+	margin-block: var(--margin, 1rem);
+}
+
+.line-height {
+	line-height: var(--line-height, 1.5rem);
+}
+
+.padding-inline {
+	padding-inline: var(--padding-inline, 0.5rem);
+}
+
+/* components */
+
+.qr-card {
+	width: 320px;
+	height: 500px;
+	background-color: hsl(var(--clr-white));
+	padding: 1rem;
+	border-radius: var(--radius, 1rem);
+	box-shadow: -2px 10px 24px -11px rgba(0, 0, 0, 0.62);
+}
